@@ -16,7 +16,7 @@ VALUES (1, 'Placeholder Image', 'https://yourstorageaccount.blob.core.windows.ne
 
 CREATE TABLE [dbo].[Images]
 (
-  [ImageId] INT NOT NULL PRIMARY KEY,
+  [Image_Id] INT NOT NULL PRIMARY KEY,
   ImageName VARCHAR(50) NOT NULL,
   ImagePath VARCHAR(MAX) NOT NULL,
   ImageDescription VARCHAR(MAX), 

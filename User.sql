@@ -8,7 +8,7 @@
 lower case when logging in. This is to prevent duplicate emails with different capitalization.
 Noting this so the API can be designed accordingly.
 
---PW will be salted and hashed using bcrypt. This is to prevent the possibility of a data breach.....added security to hash usernames???
+--PW will be salted and hashed using Argon2. This is to prevent the possibility of a data breach.....added security to hash usernames???
 --Also need a PW reset function, which will send an email to the user with a link to reset their PW
 --Need to add a PW reset token column to the User table for this to work
 --PW reset token will be a random string of characters, and will be stored in the DB as a hash
@@ -18,9 +18,9 @@ userIs will be the primary key, and will be used to query the user table. This w
 as foreign key in other tables
  */
 
-CREATE TABLE [dbo].[User]
+CREATE TABLE [dbo].[Users]
 (
-  [UserId] INT NOT NULL PRIMARY KEY,
+  [User_Id] INT NOT NULL PRIMARY KEY,
   persona_name VARCHAR(50) NOT NULL,
   user_email VARCHAR(100) unique NOT NULL,
   user_hashed_pw VARCHAR(60) NOT NULL,

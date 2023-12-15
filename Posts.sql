@@ -10,5 +10,5 @@ connected to likes, commentsm users and sperated by families(which are seperated
 
 CREATE TABLE [dbo].[Posts]
 (
-  [Id] INT NOT NULL PRIMARY KEY
+  [Post_Id] INT NOT NULL PRIMARY KEY
 )

@@ -5,5 +5,5 @@ seperated by Civilizations */
 
 CREATE TABLE [dbo].[Families]
 (
-  [FamilyId] INT NOT NULL PRIMARY KEY
+  [Family_Id] INT NOT NULL PRIMARY KEY
 )
