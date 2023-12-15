@@ -21,7 +21,7 @@ PostId, UserId tied toi this table
 
 
 
-CREATE TABLE [dbo].[Likes]
+CREATE TABLE [dbo].[post_likes]
 (
   [Like_Id] INT NOT NULL PRIMARY KEY,
   user_id int REFERENCES dbo.Users(User_Id),

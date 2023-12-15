@@ -18,7 +18,7 @@ userIs will be the primary key, and will be used to query the user table. This w
 as foreign key in other tables
  */
 
-CREATE TABLE [dbo].[Users]
+CREATE TABLE [dbo].[user]
 (
   [User_Id] INT NOT NULL PRIMARY KEY,
   persona_name VARCHAR(50) NOT NULL,

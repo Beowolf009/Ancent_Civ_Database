@@ -11,7 +11,7 @@ VALUES (1, 'Placeholder Image', 'https://yourstorageaccount.blob.core.windows.ne
  
 
 
-CREATE TABLE [dbo].[Civilizations]
+CREATE TABLE [dbo].[civilizations]
 (
   [Civ_ID] INT NOT NULL PRIMARY KEY,
   CivDescription VARCHAR(50) NOT NULL, --keep brief
