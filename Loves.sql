@@ -1,4 +1,0 @@
-CREATE TABLE [dbo].[loves]
-(
-  [Id] INT NOT NULL PRIMARY KEY
-)

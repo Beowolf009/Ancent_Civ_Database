@@ -8,7 +8,7 @@ post_text will be an object saved as a blob, and will be stored in a seperate ta
  */
 
 
-CREATE TABLE [dbo].[post_replies]
+CREATE TABLE post_replies
 (
-  [Id] INT NOT NULL PRIMARY KEY
+  post_replies_id INT NOT NULL PRIMARY KEY
 )

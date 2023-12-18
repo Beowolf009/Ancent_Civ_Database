@@ -18,14 +18,13 @@ userIs will be the primary key, and will be used to query the user table. This w
 as foreign key in other tables
  */
 
-CREATE TABLE [dbo].[user]
+CREATE TABLE user_name
 (
-  [User_Id] INT NOT NULL PRIMARY KEY,
-  persona_name VARCHAR(50) NOT NULL,
+  user_id INT NOT NULL PRIMARY KEY,
+  family_name VARCHAR(50) REFERENCES families(family_name) NOT NULL,
   user_email VARCHAR(100) unique NOT NULL,
   user_hashed_pw VARCHAR(60) NOT NULL,
-  salt VARCHAR(29) NOT NULL,
-
+  salt VARCHAR(29) NOT NULL
 );
 
 

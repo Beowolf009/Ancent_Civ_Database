@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Ancent_Civ_Database",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

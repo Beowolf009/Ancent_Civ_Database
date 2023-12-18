@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[user_notification]
+CREATE TABLE user_notification
 (
-  [Id] INT NOT NULL PRIMARY KEY
+  user_notification_id INT NOT NULL PRIMARY KEY
 )

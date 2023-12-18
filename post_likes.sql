@@ -21,10 +21,9 @@ PostId, UserId tied toi this table
 
 
 
-CREATE TABLE [dbo].[post_likes]
+CREATE TABLE post_likes
 (
-  [Like_Id] INT NOT NULL PRIMARY KEY,
-  user_id int REFERENCES dbo.Users(User_Id),
-  post_id int REFERENCES dbo.Posts(Post_Id),
-
-)
+  like_id INT NOT NULL PRIMARY KEY,
+  user_id INT REFERENCES users(user_id),
+  post_id INT REFERENCES posts(post_id)
+);

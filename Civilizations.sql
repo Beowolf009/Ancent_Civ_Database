@@ -4,18 +4,18 @@ efficient to load.
 
 Will be tied to family and images tables
 
-INSERT INTO dbo.Civiliazations (CivId, CiveDescription, CivName, CivPath)
+INSERT INTO civilizations (civ_id, civ_description, civ_name, civ_path)
 VALUES (1, 'Placeholder Image', 'https://yourstorageaccount.blob.core.windows.net/yourcontainer/placeholder.jpg');
 
  */
  
 
 
-CREATE TABLE [dbo].[civilizations]
+CREATE TABLE civilizations
 (
-  [Civ_ID] INT NOT NULL PRIMARY KEY,
-  CivDescription VARCHAR(50) NOT NULL, --keep brief
-  CivName VARCHAR(50) NOT NULL,
-  CivPath VARCHAR(MAX) NOT NULL,
+  civ_id INT NOT NULL PRIMARY KEY,
+  civ_description VARCHAR(50) NOT NULL, --keep brief
+  civ_name VARCHAR(50) NOT NULL,
+  civ_path VARCHAR(MAX) NOT NULL
 
 )

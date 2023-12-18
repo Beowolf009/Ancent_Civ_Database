@@ -3,7 +3,7 @@ seperated by Civilizations */
 
 
 
-CREATE TABLE [dbo].[civ_families]
+CREATE TABLE civ_families
 (
-  [Family_Id] INT NOT NULL PRIMARY KEY
+  family_id INT NOT NULL PRIMARY KEY
 )

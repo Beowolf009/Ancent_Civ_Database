@@ -7,17 +7,17 @@
 /* We currenly have 10 options for each family name. This will be used to populate the table. 
 This is an example of how to insert a single image into the table. 
 
-INSERT INTO dbo.Images (ImageId, ImageName, ImagePath)
+INSERT INTO images (image_id, image_name, image_path)
 VALUES (1, 'Placeholder Image', 'https://yourstorageaccount.blob.core.windows.net/yourcontainer/placeholder.jpg');
 
  */
 
 
 
-CREATE TABLE [dbo].[images]
+CREATE TABLE images
 (
-  [Image_Id] INT NOT NULL PRIMARY KEY,
-  ImageName VARCHAR(50) NOT NULL,
-  ImagePath VARCHAR(MAX) NOT NULL,
-  ImageDescription VARCHAR(MAX), 
+  image_id INT NOT NULL PRIMARY KEY,
+  image_name VARCHAR(50) NOT NULL,
+  image_path VARCHAR(MAX) NOT NULL,
+  image_description VARCHAR(MAX)
 )
