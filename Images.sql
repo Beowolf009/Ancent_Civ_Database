@@ -7,6 +7,10 @@
 /* We currenly have 10 options for each family name. This will be used to populate the table. 
 This is an example of how to insert a single image into the table. 
 
+Save images to Azure Storage Account, then use the URL to insert into the table.
+avatars and perspective images will be pngs
+logos and icons will be svg
+
 INSERT INTO images (image_id, image_name, image_path)
 VALUES (1, 'Placeholder Image', 'https://yourstorageaccount.blob.core.windows.net/yourcontainer/placeholder.jpg');
 
