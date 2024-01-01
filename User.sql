@@ -14,8 +14,12 @@ Noting this so the API can be designed accordingly.
 --PW reset token will be a random string of characters, and will be stored in the DB as a hash
 --Pw guidelines: 8-20 characters, at least one number, at least one special character, at least one capital letter, seems to be the standard???
 
+--Will use JWT for authentication. Need to add a JWT column to the User table for this to work
+
 userIs will be the primary key, and will be used to query the user table. This will be a unique identifier for each user and also use
 as foreign key in other tables
+
+The PW is a holder for the token that will be used for authentication. It will be a hash of the token, and will be stored in the DB
  */
 
 CREATE TABLE user_name
